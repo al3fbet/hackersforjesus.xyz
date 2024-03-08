@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property='og:title' content='Hackers For Jesus'/>
+<meta property='og:image' content='https://www.hackersforjesus.xyz/img/thumbnail.png'/>
+<meta property='og:description' content='Sponsored By: The 101 Lab'/>
+<meta property='og:url' content='https://www.hackersforjesus.xyz'/>
+<meta property='og:image:width' content='1200'/>
+<meta property='og:image:height' content='627'/>
+<meta property="og:type" content='website'/>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sixtyfour&display=swap" rel="stylesheet"
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<title>H A K 4 J E S U S</title>
+
+<style>
+body {
+    background-color: black;
+}
+
+</style>
+</head>
+<header>
+<div class="social-icons">
+<a href="#" class="icon email-icon"><i class="fas fa-envelope"></i></a>
+<a href="#" class="icon facebook-icon"><i class="fab fa-github"></i></a>
+<a href="#" class="icon instagram-icon"><i class="fab fa-discord"></i></a>
+<a href="#" class="icon discord-icon"><i class="fab fa-instagram"></i></a>
+</div>
+<h1 class="h1">#Hackers For Jesus</h1>
+<h1 class="h11">H 4 K 4 J E S U S </h1>
+<h3 class="h3">irc.hackersforjesus.xyz</h3>
+</header>
+<body>
+<div>    
+	<center><a href="/main.html"><img src="img/jesuscruc.jpg"></center></a>
+</div>
+<div id="terminal">
+    <pre id="terminal-text"></pre>
+  </div>
+  <script>
+    // JavaScript for Typewriter Effect
+    const terminalText = document.getElementById('terminal-text');
+    const text = `
+    Hello, I'm Ryan Orion.
+
+    Currently, I'm pursuing studies in Application Development & Computer Science at Red River College—a pivotal step in my ongoing educational journey. From childhood, I've been captivated by the inner workings of computers.
+
+    I proudly serve as the founder and CEO of both Hackers for Jesus and The 101 Lab.
+
+    My journey with technology began between the ages of 8 and 10 when my parents brought home our first computer, an IBM Aptiva. Though life's challenges led me away for a time, my passion for technology and cybersecurity reignited in 2017, following a tumultuous period.
+
+    Today, by the grace of God, I stand here, able to share my story.
+
+    This resurgence not only reignited my passion for technology but, more importantly, rekindled my faith and sense of purpose. Observing the increasingly secular nature of the IT field, particularly in comparison to my early experiences in the mid '90s, prompted the creation of Hackers for Jesus.
+
+    I extend an open invitation to individuals who share a passion for spirituality, alongside those dedicated to the craft of programming, coding, development, and ethical hacking. Whether your pursuit of knowledge delves into the mysteries of God or the intricacies of computer science, or, you're somebody like me who is seeking for the truth, you are welcome here.
+
+    If you'd like to connect with me for support, business opportunities, or simply to say hello, feel free to reach out via email or DM. My email address is [placeholder@email.com], and you can find me on social media @RyanOrion.
+
+    And if you haven't already, explore my ongoing projects—I'm always working on something new or contemplating my next endeavor.
+
+    Technology is to be respected. It is not to be worshipped. It is not to be placed above God, The Creator. It is not to be used for evil.
+    `;
+    let index = 0;
+
+    function typeWriter() {
+      if (index < text.length) {
+        const char = text.charAt(index);
+        if (char === '[') {
+          // Skip placeholder email
+          index = text.indexOf(']', index) + 1;
+        } else {
+          terminalText.innerHTML += char === '\n' ? '<br>' : char;
+          index++;
+        }
+        setTimeout(typeWriter, 20); // Typing speed
+      } else {
+        // Display prompt for user interaction
+        terminalText.innerHTML += '<br><span class="prompt">Press Enter to continue...</span>';
+        document.addEventListener('keydown', function(event) {
+          if (event.key === 'Enter') {
+            // Redirect to the next page
+            window.location.href = 'main.html';
+          }
+        });
+      }
+    }
+
+    // Start typing effect
+    typeWriter();
+  </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<div class="foot-right">
+	<center><footer>Hackers For Jesus, 2024</footer></center>
+</div>
+</body>
+</html>
+

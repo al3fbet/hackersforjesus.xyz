@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta property='og:title' content='Hackers For Jesus'/>
+    <meta property='og:image' content='https://www.hackersforjesus.xyz/img/thumbnail.png'/>
+    <meta property='og:description' content='Sponsored By: The 101 Lab'/>
+    <meta property='og:url' content='https://www.hackersforjesus.xyz'/>
+    <meta property="og:type" content='website'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Permanent+Marker&family=Special+Elite&family=Zeyada&display=swap" rel="stylesheet">
+    <title>H A K 4 J E S U S</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #23232e;
+        }
+        .background-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .teletype-container {
+            position: absolute;
+            top: 25%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+	    color: white;
+	    font-size: 48px;
+	}
+        .signin-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+        .social-icons {
+            position: absolute;
+            top: 20px;
+            left: 58px;
+            transform: translateX(-50%);
+        }
+        .social-icon {
+            display: inline-block;
+            margin-right: 10px;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.teletype.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-head">
+            <nav>
+                <ul>
+                    <li>About</li>
+                    <li>Lab</li>
+                    <li>Network</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="background-container">
+        <div id="particles-js"></div>
+
+        <!-- Teletype container -->
+        <div class="teletype-container">
+            <div id="teletype"></div>
+        </div>
+
+        <!-- Sign-in form container -->
+        <div class="signin-container">
+            <!-- Your sign-in form elements go here -->
+            <form id="signinForm">
+                <!-- Sign-in form fields, buttons, etc. -->
+            </form>
+        </div>
+
+        <section class="hero">
+            <div class="social-icons">
+                <a href="mailto:hackersforjesus@outlook.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://discord.gg/gRgpp83P" target="_blank" class="social-icon">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <!-- Add more social media icons here -->
+                <a href="https://www.github.com/e1fbyte/HackersForJesus" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Teletype effect configuration
+            $("#teletype").teletype({
+                text: [
+                    "user@hak4jesus:~$ chmod 777 genesis.sh",
+                    "user@hak4jesus:~$ sh genesis.sh"
+                    // Add more text here if needed
+                ],
+                typeDelay: 100, // Delay between typing each character (milliseconds)
+                backDelay: 50, // Delay between erasing and typing a new line (milliseconds)
+                loop: 0 // Number of loops (0 for infinite loop)
+            });
+        });
+    </script>
+</body>
+</html>
+

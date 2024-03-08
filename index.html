@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta property='og:title' content='Hackers For Jesus'/>
+    <meta property='og:image' content='/img/thumbnail.webp'/>
+    <meta property='og:description' content='Sponsored By: The 101 Lab'/>
+    <meta property='og:url' content='https://www.hackersforjesus.xyz'/>
+    <meta property="og:type" content='website'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Permanent+Marker&family=Special+Elite&family=Zeyada&display=swap" rel="stylesheet">
+    <title>Hackers For Jesus</title>
+
+<style>
+
+body {
+    background: #23232e;
+}
+.hero-section {
+    color: white;
+}    
+
+</style>
+
+</head>
+
+<body>
+	<header>
+	<div class="nav-head">
+	<nav>
+	<ul>
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/about.html">About</a></li>
+		<li><a href="/lab.html">Lab</a></li>
+		<li><a href="/network.html">Network</a></li>
+	</ul>
+	</nav>
+	</div>
+    <button type="button" class="signin-btn" id="signinButton" onclick="window.location.href='signin.html';">Sign in</button>
+
+</header>
+
+<section class="hero">
+
+        <div class="hero-content">
+    
+            <h1 class="hero-title">
+                Hackers For Jesus
+            </h1>
+    
+            <h2 class="hero-subtitle">
+                Daniel 12:4 - But thou, O Daniel, shut up the words, and seal the book, even to the time of the end:<br> many shall run to and fro, and knowledge shall be increased.
+            </h2>
+    
+            <button type="button" class="hero-button" id="signupButton">Sign up</button>
+            <!-- Signup Form -->
+            <form class="signup-form" id="signupForm" style="display: none;">
+		    <p><h2>Sign Up</h1><strong>This network is under-construction!</strong><br><br><em> If you would like to get involved and help design some cool stuff, feel free to sign up with us</em>!<br><br><br><strong>** You will receive an email back **</strong></p>
+		<!-- Your signup form fields go here -->
+                <!-- Example: -->
+                <!-- <input type="text" name="email" placeholder="Email"> -->
+                <!-- <input type="password" name="password" placeholder="Password"> -->
+                <!-- <button type="submit">Submit</button> -->
+                    <input type="text" name="email" placeholder="Email">
+                    <button type="submit">Submit</button> 
+            </form>
+    
+        </div>
+        <div class="social-icons">
+            <a href="mailto:hackersforjesus@outlook.com" class="social-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://discord.gg/gRgpp83P" target="_blank" class="social-icon">
+                <i class="fab fa-discord"></i>
+            </a>
+            <!-- Add more social media icons here -->
+	    <a href="https://www.github.com/e1fbyte/HackersForJesus" target="_blank" class="social-icon">
+		    <i class="fab fa-github"></i>
+	    </a>
+	</div>
+    </section>
+    <script>
+        document.getElementById("signupButton").addEventListener("click", function() {
+            var signupForm = document.getElementById("signupForm");
+            if (signupForm.style.display === "none") {
+                signupForm.style.display = "block";
+            } else {
+                signupForm.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
+
+

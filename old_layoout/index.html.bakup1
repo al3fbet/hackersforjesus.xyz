@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property='og:title' content='Hackers For Jesus'/>
+<meta property='og:image' content='https://www.hackersforjesus.xyz/img/thumbnail.png'/>
+<meta property='og:description' content='Sponsored By: The 101 Lab'/>
+<meta property='og:url' content='https://www.hackersforjesus.xyz'/>
+<meta property='og:image:width' content='1200'/>
+<meta property='og:image:height' content='627'/>
+<meta property="og:type" content='website'/>
+<link rel="stylesheet" href="csstyle.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<title>H A K 4 J E S U S</title>
+
+<style>
+body {
+    background-color: black;
+}
+
+</style>
+</head>
+<header>
+<div class="social-icons">
+  <a href="mailto:bengeshem@outlook.com" class="icon email-icon"><i class="fas fa-envelope"></i></a>
+  <a href="https://github.com/e1fbyte" class="icon github-icon"><i class="fab fa-github"></i></a>
+  <a href="https://discord.com/users/ghetto204" class="icon discord-icon"><i class="fab fa-discord"></i></a>
+  <a href="https://instagram.com/all7zrdear" class="icon instagram-icon"><i class="fab fa-instagram"></i></a>
+</div>
+<h1 class="h1">#Hackers For Jesus</h1>
+<h1 class="h11"> H 4 K 4 J E S U S </h1>
+<h3 class="h3">hackersforjesus.xyz</h3>
+</header>
+<body>
+<div>    
+	<center><a href="/main.html"><img src="img/jesuscruc.jpg"></center></a>
+</div>
+<div class="foot-right">
+	<center><footer> Hackers For Jesus, 2024</footer></center>
+</div>
+</body>
+</html>

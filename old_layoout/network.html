@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/4e01bc549a.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="script.js"></script>
+  <script defer src="theme.js"></script>
+  <link rel="stylesheet" href="style.css"/>
+  <title>Hackers For Jesus</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+     /* CSS for Hebrew text */
+     .container {
+      overflow: hidden; /* Hide overflow content */
+    }
+
+    .text {
+      font-family: Arial, sans-serif; /* Choose a font that supports Hebrew characters */
+      font-size: 24px; /* Adjust the initial font size */
+      font-weight: normal; /* Adjust the font weight if necessary */
+      direction: rtl; /* Set text direction to right-to-left for Hebrew */
+      text-align: right; /* Align text to the right */
+      transform-origin: top right; /* Set the origin of the transformation */
+      transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+    }
+
+    .text:hover {
+      transform: scale(1.2); /* Scale the text on hover (adjust the scaling factor as needed) */
+    }
+    .navbar {
+      overflow-y: auto; /* Add vertical scrollbar if needed */
+      max-height: 100vh; /* Limit navbar height to viewport height */
+    }
+  </style>
+</head>
+  
+<body>
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+        <a href="/main.html#" class="nav-link">
+          <span class="link-text logo-text">/HOME:$</span>
+          <i class="fas fa-angle-double-right fa-5x"></i>
+        </a>
+      </li>
+  
+      <li class="nav-item">
+        <a href="/tutorials.html#" class="nav-link">
+        <i class="fa-solid fa-file-signature"></i>
+	<span class="link-text">Tutorials</span>
+        </a>
+      </li>
+  
+      <li class="nav-item">
+        <a href="/network.html#" class="nav-link">
+          <i class="fas fa-alien-monster fa-9x"></i>
+          <span class="link-text">Network</span>
+        </a>
+      </li>
+  
+      <li class="nav-item">
+        <a href="/projects.html#" class="nav-link">
+          <i class="fas fa-space-station-moon-alt fa-5x"></i>
+          <span class="link-text">Projects</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="/about.html#" class="nav-link">
+          <i class="fas fa-space-station-moon-alt fa-5x"></i>
+          <span class="link-text">About</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="/chat.html#" class="nav-link">
+          <i class="fas fa-space-station-moon-alt fa-5x"></i>
+          <span class="link-text">Chat</span>
+        </a>
+      </li> 
+ 
+            <li class="nav-item">
+        <a href="contribute.html#" class="nav-link">
+          <i class="fas fa-space-station-moon-alt fa-5x"></i>
+          <span class="link-text">Contribute</span> 
+        </a>
+      </li> 
+
+      <li class="nav-item">
+        <a href="/main.html#" class="nav-link">
+          <i class="fas fa-space-shuttle fa-5x"></i>
+          <span class="link-text">Home</span>
+        </a>
+      </li>
+      <!-- Additional menu items -->
+    </ul>
+  </nav>
+  
+  <div>
+    <header>
+      <div class="header-content">
+        <div class="image-container">
+          <img src="https://www.hackersforjesus.xyz/img/kewtcat.jpg" alt="Hackers for Jesus Mascot - Kewt Cat">
+        </div>
+        <div class="text-container" id="dynamic-text">
+          <!-- Placeholder for dynamic content -->
+          <script>
+            const content = [
+              {
+                type: 'text',
+	        text: "Exodus 20:8-11 - Remember the sabbath day, too keep it holy. ",
+              },
+              {
+                type: 'image',
+                src: 'img/slide1.png',
+                alt: 'Banner Image',
+                style: 'max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;',
+                class: 'dynamic-image'
+              },
+              {
+                type: 'image',
+                src: 'img/ghetto.png',
+                alt: 'Another Banner Image',
+                style: 'max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;',
+                class: 'dynamic-image'
+              },
+              {
+                type: 'text',
+                text: "Another Bible verse goes here."
+              }
+            ];
+
+            let currentIndex = 0;
+            const textContainer = document.getElementById('dynamic-text');
+
+            function displayContent(index) {
+              const item = content[index];
+              if (item.type === 'image') {
+                textContainer.innerHTML = `<img src="${item.src}" alt="${item.alt}" class="${item.class}" style="${item.style}">`;
+              } else {
+                textContainer.textContent = item.text;
+              }
+            }
+
+            function rotateContent() {
+              displayContent(currentIndex);
+              currentIndex = (currentIndex + 1) % content.length;
+            }
+
+            // Call the rotateContent function initially to start the rotation
+            rotateContent();
+
+            // Set an interval to call the rotateContent function every few seconds
+            setInterval(rotateContent, 7000); // Change 5000 to the desired interval in milliseconds
+          </script>
+        </div>
+      </div>
+    </header>
+  </div>
+  
+  <div>
+    <main>
+      <center>
+        <div>
+          <h1>א ב ג ד ה ו ז ח ט י ל מ נ ס ע פ ק ר ש ת</h1>
+        </div>
+      </center>
+    </main>
+  </div>
+
+  <div class="white container">
+ <main>
+<center><h1>Network</h1></center>
+<div id="network">
+<p>This is how you will see if it parses correctly</p>
+</div>
+
+
+
+  </div>
+	  </main>
+
+	  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,110 @@
+.h1 {
+    color: white;
+    position: absolute;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    top: 0;
+    left: 10%;
+    transform: translateX(-50%);
+    margin-top: 0;
+}  
+
+.h11 {
+    color: white;
+    position: absolute;
+    padding: 1rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0;
+}
+
+
+.button:hover {
+    background-color: green;
+}
+
+.h3 {
+    color: red;
+    position: absolute;
+    padding: 1rem;
+    top: 0;
+    left: 8.3%;
+    transform: translateX(-50%);
+    margin-top: 30;
+
+}
+
+img {
+    padding: 65px;
+}
+
+.social-icons {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+}
+
+/* Styles for individual social icons */
+.icon {
+    display: inline-block;
+    margin-left: 10px; /* Adjust the spacing between icons as needed */
+    color: #fff; /* Color of the icons */
+    font-size: 20px; /* Adjust the size of the icons as needed */
+    text-decoration: none;
+}
+
+/* Styles for hover effect on social icons */
+.icon:hover {
+    color: #FF5733; /* Change color on hover */
+}
+
+.h11:hover {
+    color: red;
+}
+
+.foot-right {
+	color: white;
+}
+
+/* CSS for Terminal Styling */
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+}
+
+#terminal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the terminal */
+    z-index: 1; /* Ensure terminal is above the image */
+}
+
+#terminal-text {
+    max-width: 80%;
+    overflow: hidden; /* Hide overflow to prevent text running past the browser */
+    white-space: pre-wrap; /* Preserve line breaks */
+}
+
+#main-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Initially hide the image */
+    transition: opacity 2s ease; /* Add transition effect */
+}
+
+.show-image {
+    opacity: 1; /* Show the image */
+}
